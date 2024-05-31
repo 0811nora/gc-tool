@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nanum+Gothic+Coding&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Righteous&family=Rubik+Doodle+Shadow&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>新增遊戲桌幣別</title>
+</head>
+<body>
+    <form method="POST" action="/gamesetting/game/add/currency" target="_blank" >
+        <div class="game_table_currency">
+            <div class="container">
+                <h3 class="title">新增遊戲桌幣別</h3>
+                <div class="basic">
+                    <h5>基本設定</h5>
+                    <ul>
+                        <li>
+                            <label  for="tabletype">tabletype:</label>
+                            <input type="text" name="tabletype" placeholder="">
+                        </li>
+                        <li>
+                            <label  for="tableid">tableid:</label>
+                            <input type="text" name="tableid" placeholder="">
+                        </li>
+                        <li>
+                            <label  for="betlimitmin">betlimitmin:</label>
+                            <input type="text" name="betlimitmin" placeholder="">
+                        </li>
+                        <li>
+                            <label  for="betlimitmax">betlimitmax:</label>
+                            <input type="text" name="betlimitmax" placeholder="">
+                        </li>
+                        <li>
+                            <label for="currency">currency:</label>
+                            <input type="text" name="currency" placeholder="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="bettype_group">
+                    <h5>投注限額設定</h5>
+                    <ul class="bettype">
+                        <h6>16 TOP</h6>
+                        <li>
+                            <label for="16top_min">Min Bet:</label>
+                            <input type="number" id="16top_min" name="bettype[16top][betlimit][min]" step="0.1" >
+                        </li>
+
+                        <li>
+                            <label for="16top_max">Max Bet:</label>
+                            <input type="number" id="16top_max" name="bettype[16top][betlimit][max]" >
+                        </li>
+                        <li>
+                            <label for="16top_odds">Odds:</label>
+                            <input type="number" id="16top_odds" name="bettype[16top][odds]" step="0.1" >
+                        </li>
+
+                    </ul>
+                    <ul class="bettype">
+                        <h6>16 TOP2</h6>
+                        <li>
+                            <label for="16top2_min">Min Bet:</label>
+                            <input type="number" id="16top2_min" name="bettype[16top2][betlimit][min]" step="0.1" >
+                        </li>
+                        <li>
+                            <label for="16top2_max">Max Bet:</label>
+                            <input type="number" id="16top2_max" name="bettype[16top2][betlimit][max]" >
+                        </li>
+                        <li>
+                            <label for="16top2_odds">Odds:</label>
+                            <input type="number" id="16top2_odds" name="bettype[16top2][odds]" step="0.1" >
+                        </li>
+                    </ul>
+                    <ul class="bettype">
+                        <h6>16 TOP4</h6>
+                        <li>
+                            <label for="16top4_min">Min Bet:</label>
+                            <input type="number" id="16top4_min" name="bettype[16top4][betlimit][min]" step="0.1" >
+                        </li>
+                        <li>
+                            <label for="16top4_max">Max Bet:</label>
+                            <input type="number" id="16top4_max" name="bettype[16top4][betlimit][max]" >
+                        </li>
+                        <li>
+                            <label for="16top4_odds">Odds:</label>
+                            <input type="number" id="16top4_odds" name="bettype[16top4][odds]" step="0.1" >
+                        </li>
+                    </ul>
+                    <ul class="bettype">
+                        <h6>4 TOP</h6>
+                        <li>
+                            <label for="4top_min">Min Bet:</label>
+                            <input type="number" id="4top_min" name="bettype[4top][betlimit][min]" step="0.1" >
+                        </li>
+                        <li>
+                            <label for="4top_max">Max Bet:</label>
+                            <input type="number" id="4top_max" name="bettype[4top][betlimit][max]" >
+                        </li>
+                        <li>
+                            <label for="4top_odds">Odds:</label>
+                            <input type="number" id="4top_odds" name="bettype[4top][odds]" step="0.1" >
+                        </li>
+                    </ul>
+                    <ul class="bettype">
+                        <h6>8 TOP</h6>
+                        <li>
+                            <label for="8top_min">Min Bet:</label>
+                            <input type="number" id="8top_min" name="bettype[8top][betlimit][min]" step="0.1" >
+                        </li>
+                        <li>
+                            <label for="8top_max">Max Bet:</label>
+                            <input type="number" id="8top_max" name="bettype[8top][betlimit][max]" >
+                        </li>
+                        <li>
+                            <label for="8top_odds">Odds:</label>
+                            <input type="number" id="8top_odds" name="bettype[8top][odds]" step="0.1" >
+                        </li>  
+                    </ul>
+                    <ul class="bettype">
+                        <h6>8 TOP2</h6>
+                        <li>
+                            <label for="8top2_min">Min Bet:</label>
+                            <input type="number" id="8top2_min" name="bettype[8top2][betlimit][min]" step="0.1" >
+                        </li>
+                        <li>
+                            <label for="8top2_max">Max Bet:</label>
+                            <input type="number" id="8top2_max" name="bettype[8top2][betlimit][max]" >
+                        </li>
+                        <li>
+                            <label for="8top2_odds">Odds:</label>
+                            <input type="number" id="8top2_odds" name="bettype[8top2][odds]" step="0.1" >
+                        </li>
+                    </ul>
+                    
+                    <ul class="bettype">
+                        <h6>WIN</h6>
+                        <li>
+                            <label for="win_min">Min Bet:</label>
+                            <input type="number" id="win_min" name="bettype[win][betlimit][min]" step="0.1" >
+                        </li>
+                        <li>
+                            <label for="win_max">Max Bet:</label>
+                            <input type="number" id="win_max" name="bettype[win][betlimit][max]" >
+                        </li>
+                        <li>
+                            <label for="win_odds">Odds:</label>
+                            <input type="number" id="win_odds" name="bettype[win][odds]" step="0.1" >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <div class="button">
+            <button  class="reset" type="reset" style="width: 90px;">重填</button>
+            <button  class="submit" type="submit" style="width: 200px;">送出</button>
+        </div>
+        
+    </form>
+</body>
+</html>

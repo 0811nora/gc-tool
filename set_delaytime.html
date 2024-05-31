@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nanum+Gothic+Coding&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Righteous&family=Rubik+Doodle+Shadow&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>設定牌訊延遲時間</title>
+</head>
+<body>
+    <form method="POST" action="/gamesetting/game/set/carddelay" target="_blank" >
+        <div class="game_table_currency">
+            <div class="container">
+                <h3 class="title">設定牌訊延遲時間</h3>
+                <div class="basic">
+                    <h5>基本設定</h5>
+                    <ul>
+                        <li>
+                            <label  for="tabletype">tabletype:</label>
+                            <input type="text" name="tabletype">
+                        </li>
+                        <li>
+                            <label  for="tableid">tableid:</label>
+                            <input type="text" name="tableid">
+                        </li>
+                        <li>
+                            <label  for="carddelayms">carddelayms:</label>
+                            <input type="text" name="carddelayms">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <div class="button">
+            <button  class="reset" type="reset" style="width: 90px;">重填</button>
+            <button  class="submit" type="submit" style="width: 200px;">送出</button>
+        </div>
+        
+    </form>
+</body>
+</html>
