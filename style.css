@@ -116,7 +116,7 @@ body{
 
 .basic, .bettype_group, .language, .streaming{
     background-color: #eebbc3;
-    width: 650px;
+    max-width: 650px;
     margin: 0 auto;
     line-height: 30px;
     padding: 20px;
@@ -246,19 +246,18 @@ button:hover{
         font-size: 15px;
     }
     .game_table_currency, .game_table, .Set_betlimit{
-        max-width: 100%;
         margin-top: 20px;
         font-size: 14px;
     }
 
     .basic, .bettype_group, .language, .streaming{
-        width: 90%;
+        max-width: 90%;
     }
     .basic ul li label{
-        width: 90px;
+        max-width: 90px;
     }
     .basic ul li input{
-        width: 100px;
+        max-width: 95px;
 
     }
     .button{
